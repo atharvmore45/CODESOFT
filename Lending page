@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Food Ordering Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Order Your Favorite Food Online</h2>
+        <p>Enjoy delicious meals delivered right to your doorstep!</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item" onclick="addItem('Burger', 200)">
+            <h3>Burger</h3>
+            <p>₹200</p>
+        </div>
+        <div class="menu-item" onclick="addItem('Pizza', 300)">
+            <h3>Pizza</h3>
+            <p>₹300</p>
+        </div>
+        <div class="menu-item" onclick="addItem('Sandwich', 150)">
+            <h3>Sandwich</h3>
+            <p>₹150</p>
+        </div>
+        <div class="menu-item" onclick="addItem('Fries', 100)">
+            <h3>Fries</h3>
+            <p>₹100</p>
+        </div>
+        <div class="menu-item" onclick="addItem('Coffee', 50)">
+            <h3>Coffee</h3>
+            <p>₹50</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our company...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="order-form" onsubmit="submitOrder(event)">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <input type="submit" value="Place Order">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Food Order. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
